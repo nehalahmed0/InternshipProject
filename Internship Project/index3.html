@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4f2ee67003.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="Brand/logo-colored.svg" />
+        </div>
+        <!-- search-bar -->
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search" />
+          <select class="search-dropdown">
+            <option value="all"><b>All category</b></option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+          </select>
+          <button class="search-button">Search</button>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a href="#"><i class="fa-solid fa-user"></i><br />Profile </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-message"></i><br />Messages</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-heart"></i><br />Orders</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping"></i><br />My Cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sub-navbar">
+        <ul class="sub-nav-left">
+          <li><i class="fa-solid fa-bars"></i> All category</li>
+          <li>Hot offers</li>
+          <li>Gift boxes</li>
+          <li>Projects</li>
+          <li>Menu item</li>
+          <li>Help <i class="fa-solid fa-chevron-down"></i></li>
+        </ul>
+        <ul class="sub-nav-right">
+          <li>English, USD <i class="fa-solid fa-chevron-down"></i></li>
+          <li>
+            Ship to
+            <img
+              src="https://flagcdn.com/de.svg"
+              alt="Germany"
+              class="flag-icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="breadcrumb">
+      <div class="sub-crumb">
+        <p>Home</p>
+        >
+        <p>Clothing</p>
+        >
+        <p>Men's wear</p>
+        >
+        <p>Summer Clothing</p>
+        >
+      </div>
+    </nav>
+    
+    <div class="main-section">
+      <div class="sidebar">
+        <div class="aside-top">
+          
+          <div class="category">
+            <hr />
+            <h3>Brands <span>⌃</span></h3><br>
+            <p>Mobile Accessory</p><br>
+            <p>Electronics</p><br>
+            <p>Smart Phones</p><br>
+            <p>Modern Tech</p><br>
+            <a href="#" class="see-all">See all</a><br /><br>
+            <hr />
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Brands <span>⌃</span></h3><br>
+          <div class="checkbox-list">
+            <label><input type="checkbox" checked /> Samsung</label><br>
+            <label><input type="checkbox" checked /> Apple</label><br>
+            <label><input type="checkbox" /> Huawei</label><br>
+            <label><input type="checkbox" checked /> Poco</label><br>
+            <label><input type="checkbox" /> Lenovo</label><br>
+          </div>
+          <a href="#" class="see-all">See all</a><br /><br>
+          <hr />
+        </div>
+        <div class="filter-section2">
+          <h3>Brands <span>⌃</span></h3><br>
+          <div class="checkbox-list">
+            <label><input type="checkbox" checked /> Metalic</label><br>
+            <label><input type="checkbox" /> Plastic cover</label><br>
+            <label><input type="checkbox" /> 8gb ram</label><br>
+            <label><input type="checkbox" /> Super Power</label><br>
+            <label><input type="checkbox" /> Large memory</label><br>
+          </div>
+          <a href="#" class="see-all">See all</a><br /><br>
+          <hr />
+        </div>
+        <div class="filter-section3">
+          <details class="filter-item">
+              <summary>Price range <span>⌄</span></summary><br>
+              <div class="price-range">
+                  <div class="slider-container">
+                      <div class="slider-track"></div>
+                      <div class="slider-filled" id="sliderFilled"></div>
+                      <input type="range" id="minPrice" min="0" max="99999" value="0" step="1">
+                      <input type="range" id="maxPrice" min="0" max="99999" value="99999" step="1">
+                  </div>
+                  <div class="price-inputs">
+                      <label>
+                          Min
+                          <input type="number" id="minPriceInput" value="0" min="0" max="99999">
+                      </label>
+                      <label>
+                          Max
+                          <input type="number" id="maxPriceInput" value="99999" min="0" max="99999">
+                      </label>
+                  </div>
+                  <button class="apply-button">Apply</button>
+              </div>
+          </details>
+          <hr />
+          <details class="filter-item">
+              <summary>Condition <span>⌄</span></summary><br>
+              <select>
+                  <option>Any</option><br>
+                  <option>Refurbished</option><br>
+                  <option>Brand New</option><br>
+                  <option>Old items</option><br>
+              </select>
+          </details>
+          <hr />
+          <details class="filter-item">
+              <summary>Rating <span>⌄</span></summary><br>
+              <div class="rating-checkboxes">
+                  <label><input type="checkbox"> ★★★★★</label>
+                  <label><input type="checkbox"> ★★★★</label>
+                  <label><input type="checkbox"> ★★★</label>
+                  <label><input type="checkbox"> ★★</label>
+                  <label><input type="checkbox"> ★</label>
+              </div>
+          </details>
+          <hr />
+          <details class="filter-item">
+              <summary>Manufacturer <span>⌄</span></summary><br>
+              <select id="manufacture">
+                  <option>TechCorp</option><br>
+                  <option>GadgetMakers</option><br>
+                  <option>InnoTech</option><br>
+                  <option>FutureDevices</option><br>
+              </select>
+          </details>
+          <hr />
+      </div>
+  
+      <script>
+          const minPriceSlider = document.getElementById('minPrice');
+          const maxPriceSlider = document.getElementById('maxPrice');
+          const minPriceInput = document.getElementById('minPriceInput');
+          const maxPriceInput = document.getElementById('maxPriceInput');
+          const sliderFilled = document.getElementById('sliderFilled');
+  
+          function updateSlider() {
+              let minValue = parseInt(minPriceSlider.value);
+              let maxValue = parseInt(maxPriceSlider.value);
+  
+              if (minValue > maxValue) {
+                  minValue = maxValue;
+                  minPriceSlider.value = minValue;
+              }
+  
+              minPriceInput.value = minValue;
+              maxPriceInput.value = maxValue;
+  
+              const minPercent = (minValue / 99999) * 100;
+              const maxPercent = (maxValue / 99999) * 100;
+  
+              sliderFilled.style.left = `${minPercent}%`;
+              sliderFilled.style.width = `${maxPercent - minPercent}%`;
+          }
+  
+          minPriceSlider.addEventListener('input', updateSlider);
+          maxPriceSlider.addEventListener('input', updateSlider);
+  
+          minPriceInput.addEventListener('input', () => {
+              let value = parseInt(minPriceInput.value);
+              if (isNaN(value) || value < 0) value = 0;
+              if (value > parseInt(maxPriceInput.value)) value = parseInt(maxPriceInput.value);
+              minPriceSlider.value = value;
+              updateSlider();
+          });
+  
+          maxPriceInput.addEventListener('input', () => {
+              let value = parseInt(maxPriceInput.value);
+              if (isNaN(value) || value > 99999) value = 99999;
+              if (value < parseInt(minPriceInput.value)) value = parseInt(minPriceInput.value);
+              maxPriceSlider.value = value;
+              updateSlider();
+          });
+  
+          updateSlider();
+      </script>
+      </div>
+      <div>
+      
+        <div class="search-header">
+          <span class="item-count">12,911 items in <b>Mobile accessory</b></span>
+          <label class="checkbox">
+            <input type="checkbox" /> Verified only
+          </label>
+          <div class="dropdown">
+            <select>
+              <option>Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+          <div class="icons">
+            <span>⬛</span>
+            <span>≡</span>
+          </div>
+        </div>
+        <div class="product-grid">
+          
+          <div class="product-item">
+            <img src="./Image/cloth/3.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/cloth/2.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/cloth/4.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/tech/3.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/cloth/5.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/tech/3.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/tech/1.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/tech/5.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-item">
+            <img src="./Image/tech/6.jpg" alt="Product Image" /><hr>
+            <div class="price">$50 <s>$80</s> </div>
+            <div class="name">GoPro HERO 4K Action Camera - Black</div>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="pagination">
+      <select>
+          <option>Show 10</option>
+          <option>Show 20</option>
+          <option>Show 50</option>
+      </select>
+      <button>&lt;</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>&gt;</button>
+  </div>
+  <div class="newsletter">
+    <p><b>Subscribe on our newsletter</b></p>
+    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+    <form>
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+<div class="footer-section">
+  <footer>
+  <!-- Brand Column -->
+  <div class="footer-column">
+    <h3>Brand</h3>
+    <p>Best information about the company gies here but now lorem ipsum is</p>
+    <div class="social-icons">
+      <a href="#">🟦</a>
+      <a href="#">🐦</a>
+      <a href="#">📸</a>
+      <a href="#">🎥</a>
+      <a href="#">📧</a>
+    </div>
+  </div>
+
+  <!-- About Column -->
+  <div class="footer-column">
+    <h3>About</h3>
+    <a href="#">About Us</a>
+    <a href="#">Find store</a>
+    <a href="#">Categories</a>
+    <a href="#">Blogs</a>
+  </div>
+
+  <!-- Partnership Column -->
+  <div class="footer-column">
+    <h3>Partnership</h3>
+    <a href="#">About Us</a>
+    <a href="#">Find store</a>
+    <a href="#">Categories</a>
+    <a href="#">Blogs</a>
+  </div>
+
+  <!-- Information Column -->
+  <div class="footer-column">
+    <h3>Information</h3>
+    <a href="#">Help Center</a>
+    <a href="#">Money Refund</a>
+    <a href="#">Shipping</a>
+    <a href="#">Contact us</a>
+  </div>
+
+  <!-- For Users Column -->
+  <div class="footer-column">
+    <h3>For users</h3>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+    <a href="#">Settings</a>
+    <a href="#">My Orders</a>
+  </div>
+
+  <!-- Get App Column -->
+  <div class="footer-column">
+    <h3>Get app</h3>
+    <div class="app-buttons">
+      <a href="#">
+        <img src="apple.png" alt="App Store">
+      </a>
+      <a href="#">
+        <img src="google.png" alt="Google Play">
+      </a>
+    </div>
+  </div>
+  </footer>
+<div class="footer-foot">
+  <div class="footer-bottom">
+      <div class="copyright">
+        <span>2023 Ecommerce. All rights reserved.</span>
+      </div>
+      <div class="language-selector">
+        <select>
+          <option>English</option>
+          <option>Français</option>
+        </select>
+      </div>
+</div>          
+</div>
+  </body>
+</html>
